@@ -1,0 +1,19 @@
+ .react-scroll-to-bottom--css-luetg-1tj0vk3 {
+    background-color: rgb(255, 255, 255) !important;
+    margin-right: -5px;
+    color: white;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+ .react-scroll-to-bottom--css-luetg-1tj0vk3::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid rgb(0, 233, 93);
+    border-right: 2px solid rgb(0, 255, 98);
+}
