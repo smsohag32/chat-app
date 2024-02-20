@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import "./Chat.css";
 import { useNavigate } from "react-router-dom";
 import moment from "moment";
-const socket = io("https://steep-mountainous-avatar.glitch.me");
+const socket = io("http://localhost:3001");
 
 function Chat({ username, room }) {
   const [currentMessage, setCurrentMessage] = useState("");
@@ -74,12 +74,13 @@ function Chat({ username, room }) {
 
   return (
     <div className="flex w-full max-w-4xl mx-auto flex-col h-[90vh]">
-      <div className="bg-gradient-to-r from-teal-300 to-teal-600 text-white p-4">
+      <div className="bg-gradient-to-r from-teal-700 to-teal-600 text-white p-4">
         <div className="flex justify-between items-center">
           <p className="text-xl font-semibold">Chat-App</p>
 
           <div className="flex items-center gap-4">
-            <span>{username}</span> <button onClick={logOut}>Logout</button>
+            <span className="uppercase font-bold text-sm">{username}</span>{" "}
+            <button onClick={logOut}>Logout</button>
           </div>
         </div>
       </div>
